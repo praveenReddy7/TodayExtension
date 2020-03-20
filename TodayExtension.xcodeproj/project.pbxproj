@@ -12,7 +12,35 @@
 		AC5D48CF24220DC600A91694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5D48CD24220DC600A91694 /* Main.storyboard */; };
 		AC5D48D124220DC900A91694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5D48D024220DC900A91694 /* Assets.xcassets */; };
 		AC5D48D424220DC900A91694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5D48D224220DC900A91694 /* LaunchScreen.storyboard */; };
+		ACD488DC24222FA000F425E4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5D48E124220E6800A91694 /* NotificationCenter.framework */; };
+		ACD488DF24222FA000F425E4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD488DE24222FA000F425E4 /* TodayViewController.swift */; };
+		ACD488E224222FA000F425E4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD488E024222FA000F425E4 /* MainInterface.storyboard */; };
+		ACD488E624222FA000F425E4 /* Activity Tracker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACD488DB24222FA000F425E4 /* Activity Tracker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACD488E424222FA000F425E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5D48BE24220DC600A91694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACD488DA24222FA000F425E4;
+			remoteInfo = "Activity Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC5D48F024220E6800A91694 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACD488E624222FA000F425E4 /* Activity Tracker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AC5D48C624220DC600A91694 /* TodayExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +50,11 @@
 		AC5D48D024220DC900A91694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5D48D324220DC900A91694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5D48D524220DC900A91694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5D48E124220E6800A91694 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		ACD488DB24222FA000F425E4 /* Activity Tracker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Activity Tracker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD488DE24222FA000F425E4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		ACD488E124222FA000F425E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		ACD488E324222FA000F425E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACD488D824222FA000F425E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD488DC24222FA000F425E4 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				AC5D48C824220DC600A91694 /* TodayExtension */,
+				ACD488DD24222FA000F425E4 /* Activity Tracker */,
+				AC5D48E024220E6800A91694 /* Frameworks */,
 				AC5D48C724220DC600A91694 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5D48C624220DC600A91694 /* TodayExtension.app */,
+				ACD488DB24222FA000F425E4 /* Activity Tracker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +108,24 @@
 			path = TodayExtension;
 			sourceTree = "<group>";
 		};
+		AC5D48E024220E6800A91694 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5D48E124220E6800A91694 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACD488DD24222FA000F425E4 /* Activity Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				ACD488DE24222FA000F425E4 /* TodayViewController.swift */,
+				ACD488E024222FA000F425E4 /* MainInterface.storyboard */,
+				ACD488E324222FA000F425E4 /* Info.plist */,
+			);
+			path = "Activity Tracker";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +136,34 @@
 				AC5D48C224220DC600A91694 /* Sources */,
 				AC5D48C324220DC600A91694 /* Frameworks */,
 				AC5D48C424220DC600A91694 /* Resources */,
+				AC5D48F024220E6800A91694 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ACD488E524222FA000F425E4 /* PBXTargetDependency */,
 			);
 			name = TodayExtension;
 			productName = TodayExtension;
 			productReference = AC5D48C624220DC600A91694 /* TodayExtension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ACD488DA24222FA000F425E4 /* Activity Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACD488E724222FA000F425E4 /* Build configuration list for PBXNativeTarget "Activity Tracker" */;
+			buildPhases = (
+				ACD488D724222FA000F425E4 /* Sources */,
+				ACD488D824222FA000F425E4 /* Frameworks */,
+				ACD488D924222FA000F425E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Activity Tracker";
+			productName = "Activity Tracker";
+			productReference = ACD488DB24222FA000F425E4 /* Activity Tracker.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,12 +171,15 @@
 		AC5D48BE24220DC600A91694 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = focussoftnet;
 				TargetAttributes = {
 					AC5D48C524220DC600A91694 = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					ACD488DA24222FA000F425E4 = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
@@ -113,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				AC5D48C524220DC600A91694 /* TodayExtension */,
+				ACD488DA24222FA000F425E4 /* Activity Tracker */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +213,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACD488D924222FA000F425E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD488E224222FA000F425E4 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +233,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACD488D724222FA000F425E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD488DF24222FA000F425E4 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACD488E524222FA000F425E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACD488DA24222FA000F425E4 /* Activity Tracker */;
+			targetProxy = ACD488E424222FA000F425E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC5D48CD24220DC600A91694 /* Main.storyboard */ = {
@@ -157,6 +266,14 @@
 				AC5D48D324220DC900A91694 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ACD488E024222FA000F425E4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACD488E124222FA000F425E4 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,10 +398,12 @@
 		AC5D48D924220DC900A91694 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PF5TQ3AQ6W;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,16 +418,58 @@
 		AC5D48DA24220DC900A91694 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PF5TQ3AQ6W;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.focussoftnet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACD488E824222FA000F425E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF5TQ3AQ6W;
+				INFOPLIST_FILE = "Activity Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.focussoftnet.TodayExtension.Activity-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACD488E924222FA000F425E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF5TQ3AQ6W;
+				INFOPLIST_FILE = "Activity Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.focussoftnet.TodayExtension.Activity-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +492,15 @@
 			buildConfigurations = (
 				AC5D48D924220DC900A91694 /* Debug */,
 				AC5D48DA24220DC900A91694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACD488E724222FA000F425E4 /* Build configuration list for PBXNativeTarget "Activity Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD488E824222FA000F425E4 /* Debug */,
+				ACD488E924222FA000F425E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
