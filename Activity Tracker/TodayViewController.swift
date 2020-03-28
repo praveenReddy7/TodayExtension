@@ -211,6 +211,16 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
                                         completionHandler: { (placemarks, error) in
                                             if error == nil {
                                                 let firstLocation = placemarks?[0]
+                                                var address = ""
+                                                if let area = firstLocation?.name {
+                                                    address = area
+                                                    if let subLocality = firstLocation?.subLocality {
+                                                        address.append(", \(subLocality)")
+                                                    }
+                                                    if let locality = firstLocation?.locality {
+                                                        address.append(", \(locality)")
+                                                    }
+                                                }
                                                 self.addressLabel.text = firstLocation?.name
                                             }
                                             else {
@@ -219,5 +229,4 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
                                             }
         })
     }
-    
 }
