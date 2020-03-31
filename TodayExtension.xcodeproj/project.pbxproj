@@ -12,6 +12,8 @@
 		AC5D48CF24220DC600A91694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5D48CD24220DC600A91694 /* Main.storyboard */; };
 		AC5D48D124220DC900A91694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5D48D024220DC900A91694 /* Assets.xcassets */; };
 		AC5D48D424220DC900A91694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5D48D224220DC900A91694 /* LaunchScreen.storyboard */; };
+		ACA1332C242F9A6D00965DFB /* crm.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACA1332B242F9A6D00965DFB /* crm.ttf */; };
+		ACA1332D242F9A6D00965DFB /* crm.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACA1332B242F9A6D00965DFB /* crm.ttf */; };
 		ACD488DC24222FA000F425E4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5D48E124220E6800A91694 /* NotificationCenter.framework */; };
 		ACD488DF24222FA000F425E4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD488DE24222FA000F425E4 /* TodayViewController.swift */; };
 		ACD488E224222FA000F425E4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD488E024222FA000F425E4 /* MainInterface.storyboard */; };
@@ -51,6 +53,7 @@
 		AC5D48D324220DC900A91694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5D48D524220DC900A91694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC5D48E124220E6800A91694 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		ACA1332B242F9A6D00965DFB /* crm.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = crm.ttf; sourceTree = "<group>"; };
 		ACD488DB24222FA000F425E4 /* Activity Tracker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Activity Tracker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD488DE24222FA000F425E4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		ACD488E124222FA000F425E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -104,6 +107,7 @@
 				AC5D48D024220DC900A91694 /* Assets.xcassets */,
 				AC5D48D224220DC900A91694 /* LaunchScreen.storyboard */,
 				AC5D48D524220DC900A91694 /* Info.plist */,
+				ACA1332B242F9A6D00965DFB /* crm.ttf */,
 			);
 			path = TodayExtension;
 			sourceTree = "<group>";
@@ -208,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5D48D424220DC900A91694 /* LaunchScreen.storyboard in Resources */,
+				ACA1332C242F9A6D00965DFB /* crm.ttf in Resources */,
 				AC5D48D124220DC900A91694 /* Assets.xcassets in Resources */,
 				AC5D48CF24220DC600A91694 /* Main.storyboard in Resources */,
 			);
@@ -218,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD488E224222FA000F425E4 /* MainInterface.storyboard in Resources */,
+				ACA1332D242F9A6D00965DFB /* crm.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

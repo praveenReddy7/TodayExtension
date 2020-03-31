@@ -165,8 +165,15 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
             self.timer?.invalidate()
             self.seconds = 0
             self.checkInState(showTime: true)
+            self.openMainApp()
         }
         
+    }
+    
+    private func openMainApp() {
+        if let url = URL(string: "Today://hello") {
+            extensionContext?.open(url, completionHandler: nil)
+        }
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
